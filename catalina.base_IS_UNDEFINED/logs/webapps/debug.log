@@ -1,0 +1,27 @@
+2023-07-16 10:53:43.498 [main] DEBUG ca.bytetube.communityApp.CommunityappApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2023-07-16 10:54:20.311 [http-nio-80-exec-10] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is null ORDER BY priority DESC
+2023-07-16 10:54:20.348 [http-nio-80-exec-10] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2023-07-16 10:54:20.458 [http-nio-80-exec-10] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - <==      Total: 8
+2023-07-16 10:54:24.828 [http-nio-80-exec-5] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is null ORDER BY priority DESC
+2023-07-16 10:54:24.829 [http-nio-80-exec-5] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2023-07-16 10:54:24.921 [http-nio-80-exec-5] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - <==      Total: 8
+2023-07-16 10:54:39.812 [http-nio-80-exec-10] DEBUG c.b.c.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ?
+2023-07-16 10:54:39.814 [http-nio-80-exec-10] DEBUG c.b.c.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: bytetube(String), y62qsby6e560l52ss09626qs0lse629s(String)
+2023-07-16 10:54:39.913 [http-nio-80-exec-10] DEBUG c.b.c.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2023-07-16 10:54:39.977 [http-nio-80-exec-5] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?;
+2023-07-16 10:54:39.977 [http-nio-80-exec-5] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2023-07-16 10:54:40.079 [http-nio-80-exec-5] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - <==      Total: 18
+2023-07-16 10:54:40.079 [http-nio-80-exec-5] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id
+2023-07-16 10:54:40.080 [http-nio-80-exec-5] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2023-07-16 10:54:40.166 [http-nio-80-exec-5] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - <==      Total: 1
+2023-07-16 10:54:42.603 [http-nio-80-exec-8] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is null ORDER BY priority DESC
+2023-07-16 10:54:42.603 [http-nio-80-exec-8] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2023-07-16 10:54:42.695 [http-nio-80-exec-8] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - <==      Total: 8
+2023-07-16 10:54:50.037 [http-nio-80-exec-4] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?;
+2023-07-16 10:54:50.037 [http-nio-80-exec-4] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2023-07-16 10:54:50.143 [http-nio-80-exec-4] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - <==      Total: 18
+2023-07-16 10:54:50.144 [http-nio-80-exec-4] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id
+2023-07-16 10:54:50.144 [http-nio-80-exec-4] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2023-07-16 10:54:50.228 [http-nio-80-exec-4] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - <==      Total: 1
+2023-07-16 10:55:09.066 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2023-07-16 12:59:32.979 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE

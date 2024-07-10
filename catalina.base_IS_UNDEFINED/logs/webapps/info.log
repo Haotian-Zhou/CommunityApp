@@ -1,0 +1,9 @@
+2023-07-16 10:53:43.493 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication on MacPro-John.local with PID 7333 (/Users/johnzhou/Desktop/2023_Winter/Dal_Framework_Project/communityAppSpringboot/target/classes started by johnzhou in /Users/johnzhou/Desktop/2023_Winter/Dal_Framework_Project/communityAppSpringboot)
+2023-07-16 10:53:43.499 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to default profiles: default
+2023-07-16 10:53:45.657 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 2.46 seconds (JVM running for 3.146)
+2023-07-16 10:55:09.066 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests on MacPro-John.local with PID 7350 (started by johnzhou in /Users/johnzhou/Desktop/2023_Winter/Dal_Framework_Project/communityAppSpringboot)
+2023-07-16 10:55:09.067 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to default profiles: default
+2023-07-16 10:55:11.395 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 2.533 seconds (JVM running for 3.498)
+2023-07-16 12:59:32.978 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests on MacPro-John.local with PID 8339 (started by johnzhou in /Users/johnzhou/Desktop/2023_Winter/Dal_Framework_Project/communityAppSpringboot)
+2023-07-16 12:59:32.980 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to default profiles: default
+2023-07-16 12:59:36.200 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 3.696 seconds (JVM running for 4.961)
